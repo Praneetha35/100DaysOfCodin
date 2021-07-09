@@ -1,0 +1,11 @@
+#Finding repeated numbers in an array
+arr=[1,1,4,3,2,5,2]
+arr=sorted(arr)
+rl=[]
+k=0
+for i in arr:
+    k=k+1
+    for j in range(k,len(arr)):
+        if(arr[j]==arr[i] and arr[j] not in rl):
+            print(arr[j])
+            rl.append(arr[j])
