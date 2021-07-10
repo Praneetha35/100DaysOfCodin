@@ -1,0 +1,18 @@
+
+candies=int(input())
+N=10
+k=N-candies
+if(candies!=0):
+
+    if(k>=5):
+        print("NUMBER OF CANDIES SOLD :", candies)
+        print("NUMBER OF CANDIES AVAILABLE :",k)
+    else:
+        print("Minimum number of candies in the should be 5")
+else:
+    print("INVALID INPUT")
+    print("NUMBER OF CANDIES LEFT : 10")
+    
+
+    
+
