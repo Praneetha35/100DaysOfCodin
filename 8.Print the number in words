@@ -1,0 +1,32 @@
+a=int(input())
+pv=1
+num=a
+temp=num
+while(num>=10):
+    pv=pv*10
+    num=num//10
+
+while(temp!=0):
+    num1=temp//pv
+    temp=temp%pv
+    pv=pv//10
+    if(num1==1):
+        print("one",end=" ")
+    if(num1==2):
+        print("two",end=" ")
+    if(num1==3):
+        print("three",end=" ")
+    if(num1==4):
+        print("four",end=" ")
+    if(num1==5):
+        print("five",end=" ")
+    if(num1==6):
+        print("six",end=" ")
+    if(num1==7):
+        print("seven",end=" ")
+    if(num1==8):
+        print("eight",end=" ")  
+    if(num1==9):
+        print("nine",end=" ")
+    if(num1==0):
+        print("zero",end=" ")
