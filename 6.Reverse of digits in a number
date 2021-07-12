@@ -1,0 +1,19 @@
+num=int(input())
+
+pv=1
+temp=num
+temp1=num
+while(num!=0):
+    pv=pv*10
+    num=num//10
+
+
+rev=0
+
+while(pv!=1):
+    temp=(temp1%10)*pv
+    pv=pv//10
+    temp1=temp1//10
+    rev=temp+rev
+print(rev//10)
+    
