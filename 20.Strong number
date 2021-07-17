@@ -1,0 +1,20 @@
+def factorial(n):
+    if(n<=1):
+        return 1
+    else:
+        
+        return(n*factorial(n-1))
+        n=n-1
+
+ar=[40585,145,3,5,2,1]
+
+for i in range(0,len(ar)):
+    n=ar[i]
+    sum_=0
+    while(n!=0):
+        digit=n%10
+        sum_=sum_+(factorial(digit))
+        n=n//10
+    
+    if(sum_==ar[i]):
+        print(ar[i],end=" ")
