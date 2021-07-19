@@ -1,0 +1,17 @@
+def selectionsort(ar,n):
+    for i in range(0,n):
+        s=i 
+        c=i 
+        for j in range(s+1,n):
+            if(ar[j]<ar[s]):
+                s=j
+        temp=ar[s]
+        ar[s]=ar[c]
+        ar[c]=temp
+        
+    return ar
+
+
+ar=list(map(int,input().split()))
+n=len(ar)
+print(selectionsort(ar,n))
