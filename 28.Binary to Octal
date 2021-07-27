@@ -1,0 +1,23 @@
+binary=int(input())
+num=binary
+power=0
+decimal=0
+while(num!=0):
+    mul=num%10
+    decimal=decimal+2**(power)*mul
+    power+=1 
+    num=num//10 
+print(decimal)
+
+
+num=decimal
+
+mul=1 
+octal=0 
+
+while(num!=0):
+    rem=num%8
+    octal=rem*mul+octal
+    num=num//8
+    mul=mul*10
+print(octal)
