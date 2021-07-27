@@ -1,0 +1,12 @@
+decimal=int(input())
+num=decimal
+
+mul=1 
+binary=0 
+
+while(num!=0):
+    rem=num%2
+    binary=rem*mul+binary
+    num=num//2
+    mul=mul*10
+print(binary)
