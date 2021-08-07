@@ -1,0 +1,21 @@
+ch=input()
+n=len(ch)
+
+ans=int(ch[0])
+
+
+for i in range(1,n,2):
+    
+    if(ch[i]=='A'):
+        
+        ans=ans&int(ch[i+1])
+        
+    if(ch[i]=='B'):
+        
+        ans=ans|int(ch[i+1])
+        
+    if(ch[i]=='C'):
+       
+        ans=ans^int(ch[i+1])
+    
+print(ans)
