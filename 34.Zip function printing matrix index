@@ -1,0 +1,23 @@
+xi=[-1,-1,-1,0,0,0,1,1,1]
+yi=[-1,0,1,-1,0,1,-1,0,1]
+count=0
+for x,y in zip(xi,yi):
+    
+        print("[",x,",",y,"]",end="")
+        count+=1
+        if(count==3):
+            print()
+            count=0
+            
+            
+            
+xi=[-1,-1,-1,0,0,0,1,1,1]
+yi=[-1,0,1,-1,0,1,-1,0,1]
+count=0
+for x,y in zip(xi,yi):
+    
+        print("[",x,",",y,"]",end="")
+        count+=1
+        if(count==3):
+            print()
+            count=0
