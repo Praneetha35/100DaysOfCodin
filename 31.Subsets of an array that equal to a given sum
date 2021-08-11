@@ -1,0 +1,13 @@
+def subsets(arr,n,sum1):
+    for i in range(0,n):
+        for j in range(i+1,n):
+            if(arr[i]+arr[j]==sum1):
+                print("Subsets are [",arr[i],arr[j],"]")
+                
+        print("Not found")
+
+
+arr=[2,3,4,5]
+n=4
+sum1=7
+subsets(arr,n,sum1)
