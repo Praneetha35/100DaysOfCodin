@@ -1,0 +1,32 @@
+p=input()
+commands=input()
+x=int(p[0])
+y=int(p[1])
+z=p[2]
+m=5
+direction=['N','E','S','W']
+for j in range(0,len(direction)):
+    if(z==direction[j]):
+        i=j 
+for k in range(0,len(commands)):
+    if(commands[k]=='R'):
+        i=i+1 
+        new_dir=direction[i]
+        
+    elif(commands[k]=='L'):
+        i=i-1
+        new_dir=direction[i]
+    if(commands[k]=='M'):
+        #while(x!=-1 & x!=m & y!=m & y!=-1):
+          
+        
+            if(new_dir=='N'):
+                y+=1 
+            elif(new_dir=='E'):
+                x+=1 
+            elif(new_dir=='S'):
+                y-=1
+            else:
+                x-=1 
+        
+print("New position :",x,y,new_dir)
