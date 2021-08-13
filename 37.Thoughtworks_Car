@@ -1,0 +1,59 @@
+def check_Hatchback(code):
+        if (code=="BS01"):
+            price=2000
+        elif(code=="EP01"):
+            price=5000 
+        elif(code=="CP01"):
+            price=2000
+        elif(code=="BF01"):
+            price=1000
+        elif(code=="GP01"):
+            price=3000
+        return(price) 
+def check_Sedan(code):
+        if (code=="BS01"):
+            price=4000
+            
+        elif(code=="EP01"):
+            price=8000 
+        elif(code=="CP01"):
+            price=4000
+        elif(code=="BF01"):
+            price=1500
+        elif(code=="GP01"):
+            price=6000
+        return(price)
+def check_SUV(code):
+        if (code=="BS01"):
+            price=5000
+        elif(code=="EP01"):
+            price=10000 
+        elif(code=="CP01"):
+            price=6000
+        elif(code=="BF01"):
+            price=2500
+        elif(code=="GP01"):
+            price=8000
+        return(price)
+        
+        
+def bill(Type,code):
+    
+    if (Type=="Hatchback"):
+            return(check_Hatchback(code))
+
+    
+    if (Type=="Sedan"):
+            return(check_Sedan(code))
+
+    
+    if (Type=="SUV"):
+            return (check_SUV(code))
+
+Type=input("Type of Car: ")
+code=list(input("Enter Service Code:").split(','))
+amount=0
+for i in range(len(code)):
+    cost=bill(Type,code[i])
+    amount=amount+cost
+print("Total bill: ",amount)
