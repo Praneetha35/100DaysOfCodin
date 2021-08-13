@@ -32,7 +32,7 @@ def check_SUV(code):
             price=6000
         elif(code=="BF01"):
             price=2500
-        elif(code=="GP01"):
+        elif(code=="GP01"): 
             price=8000 
         return(price)
         
