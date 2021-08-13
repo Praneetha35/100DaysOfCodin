@@ -1,4 +1,4 @@
-def check_Hatchback(code):
+def check_Hatchback(code): 
         if (code=="BS01"):
             price=2000
         elif(code=="EP01"):
